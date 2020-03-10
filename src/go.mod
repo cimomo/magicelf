@@ -1,4 +1,4 @@
-module magicelf
+module github.com/cimomo/magicelf
 
 go 1.12
 
