@@ -1,0 +1,9 @@
+{{template "pageStart.html" .}}
+<div class="main-menu">
+  <a href="#" role="button" class="btn col-lg-6 col-lg-offset-3 primary">Home</button>
+  <a href="#" role="button" class="btn col-lg-6 col-lg-offset-3 primary">Projects</button>
+  {{if not .IsAdmin}}
+    <a href="#" role="button" class="btn col-lg-6 col-lg-offset-3 admin-primary">Administration</button>
+  {{end}}
+</div>
+{{template "pageEnd.html" .}}
