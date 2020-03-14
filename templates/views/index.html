@@ -1,9 +1,16 @@
 {{template "pageStart.html" .}}
-<div class="main-menu">
-  <a href="#" role="button" class="btn col-lg-6 col-lg-offset-3 primary">Home</button>
-  <a href="#" role="button" class="btn col-lg-6 col-lg-offset-3 primary">Projects</button>
-  {{if not .IsAdmin}}
-    <a href="#" role="button" class="btn col-lg-6 col-lg-offset-3 admin-primary">Administration</button>
-  {{end}}
+<div class="thecard">
+  <div class="card-img">
+    <img src="https://ssl.cdn-redfin.com/photo/1/mbpaddedwide/773/genMid.98773_8.jpg">
+  </div>
+  <div class="card-caption">
+    <span class="date">Friday, March 13, 2020</span>
+    <h1>$3200/month</h1>
+    <p>1000 Awesome Street NE, Awesome City, WA 98007</p>
+  </div>
+  <div class="card-outmore">
+    <h5>Details</h5>
+    <i id="outmore-icon" class="fas fa-angle-right"></i>
+  </div>
 </div>
 {{template "pageEnd.html" .}}
