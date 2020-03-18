@@ -12,7 +12,10 @@ func registerRoutes() *gin.Engine {
 	r.LoadHTMLGlob("templates/**/*.html")
 
 	r.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "index.html", nil)
+		c.HTML(http.StatusOK, "index.html",
+			map[string]interface{}{
+				"Properties": properties,
+			})
 	})
 
 	r.Static("/public", "./public")
