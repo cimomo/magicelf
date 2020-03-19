@@ -11,7 +11,7 @@ type Property struct {
 
 var properties = []Property{
 	Property{
-		time.Now(),
+		time.Date(2010, time.September, 1, 0, 0, 0, 0, time.UTC),
 		3200,
 		"1000 Awesome Street NE, Awesome City, WA 98007",
 	},
